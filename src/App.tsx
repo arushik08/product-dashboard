@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Home from "./Components/Home";
+import ProductDetails from "./Components/ProductDetails";
+import Favorites from "./Components/Favorites";
+import Layout from "./Components/Layout";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout onSearch={handleSearch}>
+        <Routes>
+          <Route path="/" element={<Home searchQuery={searchQuery} />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

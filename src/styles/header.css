@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #C890A7; 
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  width: 50px; 
+  height: 50px;
+  margin-right: 10px;
+}
+
+.app-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #212121;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar::placeholder {
+  color: #C890A7;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s ease-in-out;
+  font-family: 'Times New Roman', Times, serif;
+}
