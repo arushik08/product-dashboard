@@ -39,6 +39,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Key Features
+✔ Product Listing – Fetches and displays products from Fake Store API.
+✔ Product Details – View detailed information about each product.
+✔ Favorites Feature – Add or remove products from a favorites list (saved in localStorage).
+✔ Search & Sorting – Search for products and sort by price (ascending/descending).
+✔ Persistent Storage – Favorites remain saved even after page refresh.
+✔ Responsive Design – Works on all screen sizes.
+✔ "Back to Top" Footer – Appears when scrolling to the bottom.
+✔ Automatic Deployment – Hosted on Vercel, auto-updates with GitHub commits.
+
+## Live Demo
+The project is live at:
+🔗 https://product-dashboard-phi.vercel.app/
+
+## Contributing
+Feel free to fork the repository, create a branch, and submit a pull request!
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
